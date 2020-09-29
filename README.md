@@ -77,6 +77,8 @@ Note:
 - This implementation waits for the final chunk of data, before returning.
 - Reading data while handling/ignoring other kind of packages
 
+# To check connection status:
+if (feof($sp) === true) { connection was dropped and you need to initiate connection again } else { you are still connected }
 
 # Contribute
 
